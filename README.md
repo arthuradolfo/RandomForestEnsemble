@@ -13,7 +13,7 @@ https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice
 https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
 
 ## Evaluation
-Random FOrest Ensemble measures accuracy and other quality indicators with cross validation, selecting the best models among the a pool of differently parameterized trees.
+Random Forest Ensemble measures accuracy and other quality indicators with cross validation, selecting the best models among the a pool of differently parameterized trees.
 
 ## Why?
 This is a project for UFRGS's (Univerdade Federal do Rio Grande do Sul) subject Neural Networks and Fuzzy Systems, of the Computer Engineering degree.
