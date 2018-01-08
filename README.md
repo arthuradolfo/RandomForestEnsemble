@@ -2,7 +2,7 @@
 A random forest ensemble with flexible parameters - number of trees and number of attributes sampled. 
 
 ## Data
-Flexnet uses data from several sources to induce different models.
+RandomForestEnsemble uses data from several sources to induce different models.
 #### Haberman’s Survival Data Set
 https://archive.ics.uci.edu/ml/datasets/Haberman%27s+Survival
 #### Wine Data Set
