@@ -5,15 +5,15 @@ data class MapOfTargetAttributes (var targetAttributesKnown : MutableMap<String,
         if(!checkIfTargetAttributeIsKnown(targetAttribute)) {
             targetAttributesKnown.put(targetAttribute, lastAttributeValue)
             lastAttributeValue++
-            return targetAttributesKnown.get(targetAttribute)
+            return targetAttributesKnown[targetAttribute]
         }
         else {
-            return targetAttributesKnown.get(targetAttribute)
+            return targetAttributesKnown[targetAttribute]
         }
     }
 
     private fun checkIfTargetAttributeIsKnown(targetAttribute : String) : Boolean {
-        return targetAttributesKnown.get(targetAttribute) != null
+        return targetAttributesKnown[targetAttribute] != null
     }
 }
 

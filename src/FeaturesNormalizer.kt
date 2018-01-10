@@ -13,7 +13,7 @@ class FeaturesNormalizer (private val targetPosition : Int) {
             dataSetNormalized.add(Instance(
                                     attributes = mutableListOf(),
                                     targetAttribute = "",
-                                    targetAttributeNeuron = 0
+                                    targetAttributeInt = 0
                                 ))
         }
 
@@ -36,7 +36,7 @@ class FeaturesNormalizer (private val targetPosition : Int) {
             auxDataSet.forEachIndexed {
                 index, instance -> run {
                     //println(instance.targetAttribute)
-                    dataSetNormalized[index].targetAttributeNeuron = targetAttributesKnown.insertTargetAttribute(instance.targetAttribute)!!
+                    dataSetNormalized[index].targetAttributeInt = targetAttributesKnown.insertTargetAttribute(instance.targetAttribute)!!
                     dataSetNormalized[index].targetAttribute = instance.targetAttribute
                     dataSetNormalized[index].attributes.add((instance.attributes[feature-1]-minValue)/(maxValue-minValue))
                 }
@@ -63,7 +63,7 @@ class FeaturesNormalizer (private val targetPosition : Int) {
         val instanceConverted = Instance(
                 attributes = mutableListOf(),
                 targetAttribute = "",
-                targetAttributeNeuron = 0
+                targetAttributeInt = 0
         )
 
         instance.forEachIndexed {
