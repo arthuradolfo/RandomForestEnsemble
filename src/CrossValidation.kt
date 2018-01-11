@@ -1,4 +1,4 @@
-class CrossValidation (dataFile : String, val k : Int, targetPosition : Int, hasId : Boolean) {
+class CrossValidation (dataFile : String, k : Int, targetPosition : Int, hasId : Boolean) {
 
     private val dr = DataReader(dataFile, targetPosition, hasId)
     private val folding = Folding(dr.trainingDataSet, k)
