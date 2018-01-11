@@ -9,12 +9,13 @@ sealed class DecisionTree {
 data class DecisionLeaf(val decision: Int): DecisionTree() {
     override fun decide(instance: Instance): Int = decision
 }
+
 data class TestNode(val testAttribute: Int, var branches: MutableList<DecisionTree>): DecisionTree() {
     override fun decide(instance: Instance) = branch(instance, branches, testAttribute).decide(instance)
 
     private fun branch(instance: Instance, branches: MutableList<DecisionTree>, attribute: Int): DecisionTree {
         val matches = mutableListOf<Int>()
-        (0 .. branches.size)
+        (0 .. branches.lastIndex)
                 .filter { instance.attributes[attribute] in branches[it].commonAttributeRange }
                 .forEach { matches.add(it) }
 
