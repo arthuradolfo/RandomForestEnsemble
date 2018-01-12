@@ -2,7 +2,7 @@ import java.util.*
 
 class Bootstrap(var instances: MutableList<Instance>) {
 
-    val bootstrap_set    :   MutableList<Instance> = mutableListOf()
+    val bootstrap_set: MutableList<Instance> = mutableListOf()
 
     init {
         doBootstraping()
@@ -19,7 +19,7 @@ class Bootstrap(var instances: MutableList<Instance>) {
     }
 }
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     val dataReader = DataReader("./data/haberman.data", 3, true)
     val bs = Bootstrap(dataReader.trainingDataSet)
     println(bs.bootstrap_set)

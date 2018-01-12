@@ -37,8 +37,7 @@ class Planter(private val instances: List<Instance>, private val mAttribs: Int, 
             if (classes.containsKey(instance.targetAttributeInt)) {
                 val update = instance.targetAttributeInt + 1
                 classes.replace(instance.targetAttributeInt, update)
-            }
-            else classes.put(instance.targetAttributeInt, 1)
+            } else classes.put(instance.targetAttributeInt, 1)
         }
         return classes.values.max()!!
     }
@@ -73,7 +72,7 @@ class Planter(private val instances: List<Instance>, private val mAttribs: Int, 
                     maxGain = gain
                     //generate ranges from possible values of attribute
                     val ranges = mutableListOf<ClosedRange<Double>>()
-                    categoricalAttributesValues[attribute]?.forEach { ranges.add(it.toDouble() .. it.toDouble()) }
+                    categoricalAttributesValues[attribute]?.forEach { ranges.add(it.toDouble()..it.toDouble()) }
                     maxGainNodeSplit = NodeSplit(attribute, ranges)
                 }
 
@@ -87,7 +86,7 @@ class Planter(private val instances: List<Instance>, private val mAttribs: Int, 
                         //update comparison gain
                         maxGain = gain
                         //generate ranges from cut point
-                        maxGainNodeSplit = NodeSplit(attribute, listOf(0.0 .. cutPoint, cutPoint + Double.MIN_VALUE .. Double.MAX_VALUE))
+                        maxGainNodeSplit = NodeSplit(attribute, listOf(0.0..cutPoint, cutPoint + Double.MIN_VALUE..Double.MAX_VALUE))
                     }
                 }
             }
@@ -118,7 +117,7 @@ class Planter(private val instances: List<Instance>, private val mAttribs: Int, 
 
     private fun infoContinuousAttribute(attribute: Int, cutPoint: Double, instances: List<Instance>): Double {
         //use ranges (based on the cut point) to represent the possible values for the attribute
-        val ranges = listOf<ClosedRange<Double>>(0.0 .. cutPoint, cutPoint + Double.MIN_VALUE .. Double.MAX_VALUE)
+        val ranges = listOf<ClosedRange<Double>>(0.0..cutPoint, cutPoint + Double.MIN_VALUE..Double.MAX_VALUE)
 
         var sum = 0.0
         ranges.forEach { range ->
@@ -148,9 +147,9 @@ class Planter(private val instances: List<Instance>, private val mAttribs: Int, 
         orderedInstances.indices.forEach {
             //if there is a class change
             if (orderedInstances[it].targetAttributeInt != orderedInstances[it + 1].targetAttributeInt)
-                //make a cut point between the attribute values
+            //make a cut point between the attribute values
                 cutPoints.add((orderedInstances[it].attributes[attribute]
-                                + orderedInstances[it + 1].attributes[attribute]) / 2)
+                        + orderedInstances[it + 1].attributes[attribute]) / 2)
         }
 
         return cutPoints.toList()

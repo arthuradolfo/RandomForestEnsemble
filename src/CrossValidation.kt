@@ -1,4 +1,4 @@
-class CrossValidation (dataFile : String, k : Int, targetPosition : Int, hasId : Boolean) {
+class CrossValidation(dataFile: String, k: Int, targetPosition: Int, hasId: Boolean) {
 
     private val dr = DataReader(dataFile, targetPosition, hasId)
     private val folding = Folding(dr.trainingDataSet, k)
@@ -9,7 +9,7 @@ class CrossValidation (dataFile : String, k : Int, targetPosition : Int, hasId :
     }
 
     private fun calculateMetrics(folding: Folding, testFold: Int): MetricsA {
-        return MetricsA(0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0)
+        return MetricsA(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
     }
 
     private fun calculateMeanMetrics(metricsList: List<MetricsA>): MetricsA {
@@ -23,17 +23,17 @@ class CrossValidation (dataFile : String, k : Int, targetPosition : Int, hasId :
         var standardDeviationRecall = 0.0
 
         metricsList.forEach {
-            meanJ += it.j/metricsList.size
-            meanAccuracy += it.accuracy/metricsList.size
-            meanPrecision += it.precision/metricsList.size
-            meanRecall += it.recall/metricsList.size
+            meanJ += it.j / metricsList.size
+            meanAccuracy += it.accuracy / metricsList.size
+            meanPrecision += it.precision / metricsList.size
+            meanRecall += it.recall / metricsList.size
         }
 
         metricsList.forEach {
-            standardDeviationJ += Math.pow((it.j-meanJ), 2.0)/(metricsList.size-1)
-            standardDeviationAccuracy += Math.pow((it.accuracy-meanAccuracy), 2.0)/(metricsList.size-1)
-            standardDeviationPrecision += Math.pow((it.precision-meanPrecision), 2.0)/(metricsList.size-1)
-            standardDeviationRecall += Math.pow((it.recall-meanRecall), 2.0)/(metricsList.size-1)
+            standardDeviationJ += Math.pow((it.j - meanJ), 2.0) / (metricsList.size - 1)
+            standardDeviationAccuracy += Math.pow((it.accuracy - meanAccuracy), 2.0) / (metricsList.size - 1)
+            standardDeviationPrecision += Math.pow((it.precision - meanPrecision), 2.0) / (metricsList.size - 1)
+            standardDeviationRecall += Math.pow((it.recall - meanRecall), 2.0) / (metricsList.size - 1)
         }
 
         standardDeviationJ = Math.sqrt(standardDeviationJ)
@@ -57,7 +57,7 @@ class CrossValidation (dataFile : String, k : Int, targetPosition : Int, hasId :
     }
 }
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     val cv = CrossValidation("./data/cmc.data", 10, 9, false)
     cv.doCrossValidation()
     println("ok")
