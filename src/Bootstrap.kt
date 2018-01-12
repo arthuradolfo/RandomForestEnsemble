@@ -2,19 +2,19 @@ import java.util.*
 
 class Bootstrap(var instances: MutableList<Instance>) {
 
-    val bootstrap_set: MutableList<Instance> = mutableListOf()
+    val bootstrapSet: MutableList<Instance> = mutableListOf()
 
     init {
-        doBootstraping()
+        doBootstrapping()
     }
 
-    private fun doBootstraping() {
-        val size_of_set = instances.size
-        println(size_of_set)
-        while (bootstrap_set.size < size_of_set) {
-            val random_index = Random().nextInt((size_of_set))
-            println(random_index)
-            bootstrap_set.add(instances[random_index])
+    private fun doBootstrapping() {
+        val sizeOfSet = instances.size
+        println(sizeOfSet)
+        while (bootstrapSet.size < sizeOfSet) {
+            val randomIndex = Random().nextInt((sizeOfSet))
+            println(randomIndex)
+            bootstrapSet.add(instances[randomIndex])
         }
     }
 }
@@ -22,6 +22,6 @@ class Bootstrap(var instances: MutableList<Instance>) {
 fun main(args: Array<String>) {
     val dataReader = DataReader("./data/haberman.data", 3, true)
     val bs = Bootstrap(dataReader.trainingDataSet)
-    println(bs.bootstrap_set)
+    println(bs.bootstrapSet)
     println("ok")
 }

@@ -15,8 +15,8 @@ class Bilbo(var ntree: Int, var mattributes: Int, var instances: MutableList<Ins
 fun main(args: Array<String>) {
     val dataReader = DataReader("./data/haberman.data", 3, true)
     val bilbo = Bilbo(10, 5, dataReader.trainingDataSet)
-    println(bilbo.bootstrap_sets[0].bootstrap_set)
-    println(bilbo.bootstrap_sets[1].bootstrap_set)
-    println(bilbo.bootstrap_sets[2].bootstrap_set)
+    println(bilbo.bootstrap_sets[0].bootstrapSet)
+    println(bilbo.bootstrap_sets[1].bootstrapSet)
+    println(bilbo.bootstrap_sets[2].bootstrapSet)
     println("ok")
 }

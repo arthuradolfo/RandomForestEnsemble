@@ -2,12 +2,12 @@ data class MapOfTargetAttributes(var targetAttributesKnown: MutableMap<String, I
     var lastAttributeValue = 0
 
     fun insertTargetAttribute(targetAttribute: String): Int? {
-        if (!checkIfTargetAttributeIsKnown(targetAttribute)) {
+        return if (!checkIfTargetAttributeIsKnown(targetAttribute)) {
             targetAttributesKnown.put(targetAttribute, lastAttributeValue)
             lastAttributeValue++
-            return targetAttributesKnown[targetAttribute]
+            targetAttributesKnown[targetAttribute]
         } else {
-            return targetAttributesKnown[targetAttribute]
+            targetAttributesKnown[targetAttribute]
         }
     }
 
