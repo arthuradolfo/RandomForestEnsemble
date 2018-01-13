@@ -78,6 +78,3 @@ class FeaturesStandardizer(private val targetPosition: Int, private val columnDe
         return instanceConverted
     }
 }
-
-fun main(args: Array<String>) {
-}
