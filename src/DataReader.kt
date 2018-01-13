@@ -4,8 +4,7 @@ import java.util.*
 class DataReader(file: String) {
 
     private val dataString: String = File(file).readText()
-    val dataSet: MutableList<List<String>> = mutableListOf()
-    val dataSetNormalized: MutableList<Instance> = mutableListOf()
+    val dataSet: MutableList<Instance> = mutableListOf()
     val trainingDataSet: MutableList<Instance> = mutableListOf()
     val testDataSet: MutableList<Instance> = mutableListOf()
     val categoricalAttributesValues: Map<Int, List<Double>>
@@ -60,6 +59,8 @@ class DataReader(file: String) {
     val columnDescriptor: MutableList<Int>
 
     init {
+        val protoDataSet: MutableList<List<String>> = mutableListOf()
+
         columnDescriptor = buildColumnDescriptor().toMutableList()
 
         dataString.lines().forEachIndexed { index, line ->
@@ -69,7 +70,7 @@ class DataReader(file: String) {
                 //if the are ids, we discard it
                 instanceAux.indices.forEach { if (isIdPosition(it)) instanceAux.removeAt(it) }
 
-                dataSet.add(instanceAux)
+                protoDataSet.add(instanceAux)
             }
         }
         //after ids in instances are removed, we remove IS_ID entries in descriptor
@@ -77,12 +78,12 @@ class DataReader(file: String) {
         println("\n\nCOLUMN DESCRIPTOR:") ; println(columnDescriptor)
 
         val normalizer = FeaturesStandardizer(getTargetPosition(), columnDescriptor)
-        dataSetNormalized.addAll(normalizer.standardizeFeatures(dataSet))
+        dataSet.addAll(normalizer.standardizeFeatures(protoDataSet))
         categoricalAttributesValues = normalizer.categoricalAttributesValues
         println("CATEGORICAL ATTRIBUTES VALUES:") ; println(categoricalAttributesValues)
 
 
-        Collections.shuffle(dataSetNormalized)
+        Collections.shuffle(dataSet)
         splitSetsToTrainAndTest()
     }
 
@@ -115,13 +116,13 @@ class DataReader(file: String) {
     }
 
     private fun splitSetsToTrainAndTest() {
-        val numberOfSets: Int = dataSetNormalized.count()
+        val numberOfSets: Int = dataSet.count()
         val numberOfTrainingSets: Int = Math.floor(numberOfSets * 0.8).toInt()
         for (i in 1..numberOfSets) {
             if (i - 1 < numberOfTrainingSets) {
-                trainingDataSet.add(dataSetNormalized[i - 1])
+                trainingDataSet.add(dataSet[i - 1])
             } else {
-                testDataSet.add(dataSetNormalized[i - 1])
+                testDataSet.add(dataSet[i - 1])
             }
         }
     }

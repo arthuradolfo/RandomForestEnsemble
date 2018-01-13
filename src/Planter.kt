@@ -1,7 +1,7 @@
 import java.util.*
 import kotlin.math.log2
 
-class Planter(private val instances: List<Instance>, private val mAttributes: Int, private val categoricalAttributesValues: Map<Int, List<Int>>) {
+class Planter(private val instances: List<Instance>, private val categoricalAttributesValues: Map<Int, List<Double>>, private val mAttributes: Int = instances.first().attributes.size) {
 
     fun plantTree(): DecisionTree = recursivelyBuildTree(instances,
             instances.possibleAttributes().randomSubset(mAttributes).toMutableList()

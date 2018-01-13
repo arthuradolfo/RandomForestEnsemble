@@ -9,7 +9,7 @@ class Bilbo(var ntree: Int, var mattributes: Int, var instances: MutableList<Ins
     }
 
     private fun generateDecisionTrees() {
-        var planter = Planter(instances, mattributes, categoricalAttributesValues)
+        var planter = Planter(instances, categoricalAttributesValues, mattributes)
         for (number_of_sets in 1..ntree) {
             decision_trees.add(planter.plantTree())
         }
