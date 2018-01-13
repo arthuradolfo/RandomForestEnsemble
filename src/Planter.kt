@@ -1,10 +1,10 @@
 import java.util.*
 import kotlin.math.log2
 
-class Planter(private val instances: List<Instance>, private val mAttribs: Int, private val categoricalAttributesValues: Map<Int, List<Int>>) {
+class Planter(private val instances: List<Instance>, private val mAttributes: Int, private val categoricalAttributesValues: Map<Int, List<Int>>) {
 
     fun plantTree(): DecisionTree = recursivelyBuildTree(instances,
-            instances.possibleAttributes().randomSubset(mAttribs).toMutableList()
+            instances.possibleAttributes().randomSubset(mAttributes).toMutableList()
     )
 
     private fun recursivelyBuildTree(instances: List<Instance>, possibleAttributes: MutableList<Int>): DecisionTree {
@@ -157,7 +157,7 @@ class Planter(private val instances: List<Instance>, private val mAttribs: Int, 
 }
 
 fun main(args: Array<String>) {
-    val reader = DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv", 4, true)
+    val reader = DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv")
     reader.dataSet.forEach { println(it) }
 }
 

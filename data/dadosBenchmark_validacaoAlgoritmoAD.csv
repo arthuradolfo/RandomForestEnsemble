@@ -1,4 +1,4 @@
-Tempo;Temperatura;Umidade;Ventoso;Joga
+categorical;categorical;categorical;categorical;target
 Ensolarado;Quente;Alta;Falso;Nao
 Ensolarado;Quente;Alta;Verdadeiro;Nao
 Nublado;Quente;Alta;Falso;Sim
