@@ -1,6 +1,7 @@
 class FeaturesStandardizer(private val targetPosition: Int, private val columnDescriptor: List<Int>) {
 
     val categoricalAttributesValues = mutableMapOf<Int, List<Double>>()
+    val categoricalAttributesMeanings = mutableMapOf<Int, Map<String,Double>>()
     private val targetAttributesKnown: MapOfTargetAttributes = MapOfTargetAttributes(targetAttributesKnown = mutableMapOf())
 
     fun standardizeFeatures(dataSet: MutableList<List<String>>): Collection<Instance> {
@@ -52,6 +53,7 @@ class FeaturesStandardizer(private val targetPosition: Int, private val columnDe
                     dataSet[instanceIndex] = mutableInstance
                 }
                 categoricalAttributesValues.put(column, values.toList())
+                categoricalAttributesMeanings.put(column, stringValues)
             }
         }
 

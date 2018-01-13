@@ -1,6 +1,5 @@
 sealed class DecisionTree {
 
-    var commonAttributeIndex: Int = 0
     var commonAttributeRange: ClosedRange<Double> = 0.0..0.0 + Double.MIN_VALUE
 
     abstract fun decide(instance: Instance): Int
@@ -8,6 +7,10 @@ sealed class DecisionTree {
 
 data class DecisionLeaf(val decision: Int) : DecisionTree() {
     override fun decide(instance: Instance): Int = decision
+
+    override fun toString(): String {
+        return "DecisionLeaf(decision=$decision, commonAttributeRange=$commonAttributeRange)"
+    }
 }
 
 data class TestNode(val testAttribute: Int, var branches: MutableList<DecisionTree>) : DecisionTree() {
@@ -24,6 +27,10 @@ data class TestNode(val testAttribute: Int, var branches: MutableList<DecisionTr
             0 -> throw RuntimeException("No possible branches")
             else -> throw RuntimeException("Multiple possible branches (${matches.size})")
         }
+    }
+
+    override fun toString(): String {
+        return "TestNode(testAttribute=$testAttribute, commonAttributeRange=$commonAttributeRange, branches=$branches)"
     }
 }
 

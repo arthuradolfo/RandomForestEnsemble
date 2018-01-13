@@ -8,6 +8,7 @@ class DataReader(file: String) {
     val trainingDataSet: MutableList<Instance> = mutableListOf()
     val testDataSet: MutableList<Instance> = mutableListOf()
     val categoricalAttributesValues: Map<Int, List<Double>>
+    val categoricalAttributesMeanings: Map<Int, Map<String, Double>>
 
 
     companion object {
@@ -77,11 +78,12 @@ class DataReader(file: String) {
         columnDescriptor.indices.forEach { if (isIdPosition(it)) columnDescriptor.removeAt(it) }
         println("\n\nCOLUMN DESCRIPTOR:") ; println(columnDescriptor)
 
-        val normalizer = FeaturesStandardizer(getTargetPosition(), columnDescriptor)
-        dataSet.addAll(normalizer.standardizeFeatures(protoDataSet))
-        categoricalAttributesValues = normalizer.categoricalAttributesValues
+        val standardizer = FeaturesStandardizer(getTargetPosition(), columnDescriptor)
+        dataSet.addAll(standardizer.standardizeFeatures(protoDataSet))
+        categoricalAttributesValues = standardizer.categoricalAttributesValues
+        categoricalAttributesMeanings = standardizer.categoricalAttributesMeanings
         println("CATEGORICAL ATTRIBUTES VALUES:") ; println(categoricalAttributesValues)
-
+        println("CATEGORICAL ATTRIBUTES MEANINGS:") ; println(categoricalAttributesMeanings)
 
         Collections.shuffle(dataSet)
         splitSetsToTrainAndTest()

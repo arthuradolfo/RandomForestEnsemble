@@ -3,27 +3,45 @@ import kotlin.math.log2
 
 class Planter(private val instances: List<Instance>, private val categoricalAttributesValues: Map<Int, List<Double>>, private val mAttributes: Int = instances.first().attributes.size) {
 
-    fun plantTree(): DecisionTree = recursivelyBuildTree(instances,
-            instances.possibleAttributes().randomSubset(mAttributes).toMutableList()
-    )
+    fun plantTree(): DecisionTree {
+        val tree = recursivelyBuildTree(instances, instances.possibleAttributes().randomSubset(mAttributes).toMutableList())
+        tree.commonAttributeRange = 0.0..0.0
+        return tree
+    }
 
     private fun recursivelyBuildTree(instances: List<Instance>, possibleAttributes: MutableList<Int>): DecisionTree {
+        //println("recursivelyBuildTree with instances $instances")
+
         when {
-            instances.allAreSameClass() -> return DecisionLeaf(instances.first().targetAttributeInt)
-            possibleAttributes.isEmpty() -> return DecisionLeaf(instances.majorityClass())
+            instances.allAreSameClass() -> {
+                println("All instances are of same class! $instances")
+                return DecisionLeaf(instances.first().targetAttributeInt)
+            }
+            possibleAttributes.isEmpty() -> {
+                println("No more possible attributes!")
+                return DecisionLeaf(instances.majorityClass())
+            }
         }
 
         val nodeSplit = nodeSplitID3(instances, possibleAttributes)
+        //println(nodeSplit)
         possibleAttributes.remove(nodeSplit.attribute)
 
         val decisionTree = TestNode(nodeSplit.attribute, mutableListOf())
 
         (0 until nodeSplit.ranges.size).forEach { branchIndex ->
-            val instancesSubset = instances.filter { it.targetAttributeInt in nodeSplit.ranges[branchIndex] }
-            if (instancesSubset.isEmpty())
-                decisionTree.branches.add(branchIndex, DecisionLeaf(instances.majorityClass()))
-            else
-                decisionTree.branches.add(branchIndex, recursivelyBuildTree(instancesSubset, possibleAttributes))
+            val instancesSubset = instances.filter { it.attributes[nodeSplit.attribute] in nodeSplit.ranges[branchIndex] }
+            if (instancesSubset.isEmpty()) {
+                val leaf = DecisionLeaf(instances.majorityClass())
+                leaf.commonAttributeRange = nodeSplit.ranges[branchIndex]
+                decisionTree.branches.add(branchIndex, leaf)
+            }
+            else {
+                //println("\n\n!!!!!Recursive call!!!!!")
+                val recursiveBranch = recursivelyBuildTree(instancesSubset, possibleAttributes)
+                recursiveBranch.commonAttributeRange = nodeSplit.ranges[branchIndex]
+                decisionTree.branches.add(branchIndex, recursiveBranch)
+            }
         }
 
         return decisionTree
@@ -61,18 +79,21 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
         var maxGain = 0.0
         var maxGainNodeSplit = NodeSplit(0, emptyList())
 
+        //println("\n\n ---- POSSIBLE ATTRIBUTES $possibleAttributes ----")
         possibleAttributes.forEach { attribute ->
             //check if attribute is categorical or continuous
             if (categoricalAttributesValues.containsKey(attribute)) {
 
+                //println("\n\n ---- CATEGORICAL ATTRIBUTE $attribute ----")
                 val gain = infoGain(attribute, instances)
+                //println("Gain = $gain")
 
                 if (gain > maxGain) {
                     //update comparison gain
                     maxGain = gain
                     //generate ranges from possible values of attribute
                     val ranges = mutableListOf<ClosedRange<Double>>()
-                    categoricalAttributesValues[attribute]?.forEach { ranges.add(it.toDouble()..it.toDouble()) }
+                    categoricalAttributesValues[attribute]?.forEach { ranges.add(it..it) }
                     maxGainNodeSplit = NodeSplit(attribute, ranges)
                 }
 
@@ -91,6 +112,7 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
                 }
             }
         }
+        println("Max gain is = $maxGain for $maxGainNodeSplit")
         return maxGainNodeSplit
     }
 
@@ -101,21 +123,27 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
             = info(instances) - infoContinuousAttribute(attribute, cutPoint, instances)
 
     private fun info(instances: List<Instance>): Double {
+        //println("\n*** INFO CALL ***")
         val classesProbabilities = mutableMapOf<Int, Double>()
         instances.forEach { instance ->
             if (!classesProbabilities.containsKey(instance.targetAttributeInt)) {
                 val clazz = instance.targetAttributeInt
                 val classAppearances = instances.filter { it.targetAttributeInt == clazz }.size
-                val classProbability = classAppearances / instances.size
-                classesProbabilities.put(instance.targetAttributeInt, classProbability.toDouble())
+                val classProbability = classAppearances / instances.size.toDouble()
+                classesProbabilities.put(instance.targetAttributeInt, classProbability)
+                //println("Class $clazz probability is $classAppearances / ${ instances.size} = $classProbability")
             }
         }
         var sum = 0.0
         classesProbabilities.values.forEach { sum += it * log2(it) }
+
+        //println("Info is ${-sum}")
+
         return -sum
     }
 
     private fun infoContinuousAttribute(attribute: Int, cutPoint: Double, instances: List<Instance>): Double {
+        //println("\n*** INFO CONTINUOUS ATTRIBUTE CALL ***")
         //use ranges (based on the cut point) to represent the possible values for the attribute
         val ranges = listOf<ClosedRange<Double>>(0.0..cutPoint, cutPoint + Double.MIN_VALUE..Double.MAX_VALUE)
 
@@ -124,15 +152,22 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
             val instancesWithTheValue = instances.filter { it.attributes[attribute] in range }
             sum += instancesWithTheValue.size * info(instancesWithTheValue)
         }
+
+        //println("Info of continuous attribute is ${sum / instances.size}")
+
         return sum / instances.size
     }
 
     private fun infoCategoricalAttribute(attribute: Int, instances: List<Instance>): Double {
+        //println("\n*** INFO CATEGORICAL ATTRIBUTE CALL ***")
         var sum = 0.0
         categoricalAttributesValues[attribute]?.forEach { categoricalValue ->
-            val instancesWithTheValue = instances.filter { it.attributes[attribute] == categoricalValue.toDouble() }
+            val instancesWithTheValue = instances.filter { it.attributes[attribute] == categoricalValue }
             sum += instancesWithTheValue.size * info(instancesWithTheValue)
         }
+        //println("\n*** INFO CATEGORICAL ATTRIBUTE END ***")
+        //println("Info of categorical attribute $attribute is ${sum / instances.size}")
+
         return sum / instances.size
     }
 
@@ -158,6 +193,9 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
 
 fun main(args: Array<String>) {
     val reader = DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv")
-    reader.dataSet.forEach { println(it) }
+    //reader.dataSet.forEach { println(it) }
+
+    val planter = Planter(reader.dataSet, reader.categoricalAttributesValues)
+    println(planter.plantTree())
 }
 
