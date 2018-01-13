@@ -196,6 +196,10 @@ fun main(args: Array<String>) {
     //reader.dataSet.forEach { println(it) }
 
     val planter = Planter(reader.dataSet, reader.categoricalAttributesValues)
-    println(planter.plantTree())
+    val tree = planter.plantTree()
+    println(tree)
+    reader.dataSet.forEach {
+        println("Decision on $it is ${tree.decide(it)}")
+    }
 }
 
