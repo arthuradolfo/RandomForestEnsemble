@@ -1,6 +1,6 @@
-class CrossValidation(dataFile: String, k: Int, targetPosition: Int, hasId: Boolean) {
+class CrossValidation(dataFile: String, k: Int) {
 
-    private val dr = DataReader(dataFile, targetPosition, hasId)
+    private val dr = DataReader(dataFile)
     private val folding = Folding(dr.trainingDataSet, k)
     private val MAX_BEST_CONFIGS_LIST_SIZE = 10
 
@@ -58,7 +58,7 @@ class CrossValidation(dataFile: String, k: Int, targetPosition: Int, hasId: Bool
 }
 
 fun main(args: Array<String>) {
-    val cv = CrossValidation("./data/cmc.data", 10, 9, false)
+    val cv = CrossValidation("./data/cmc.data", 10)
     cv.doCrossValidation()
     println("ok")
 }

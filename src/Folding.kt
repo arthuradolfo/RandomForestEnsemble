@@ -40,7 +40,7 @@ class Folding(val dataSet: MutableList<Instance>, val k: Int) {
 }
 
 fun main(args: Array<String>) {
-    val dr = DataReader("./data/haberman.data", 3, true)
+    val dr = DataReader("./data/haberman.data")
     val cv = Folding(dr.trainingDataSet, 10)
     println(cv.folds[0])
     println(cv.folds[1])
