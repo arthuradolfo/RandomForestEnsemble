@@ -125,7 +125,7 @@ class Planter(
                 }
             }
         }
-        //println("Max gain is = $maxGain for $maxGainNodeSplit")
+        println("Max gain is = $maxGain for $maxGainNodeSplit")
         return maxGainNodeSplit
     }
 
