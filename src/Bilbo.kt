@@ -1,16 +1,20 @@
-class Bilbo(var nTree: Int, var mAttributes: Int, var instances: MutableList<Instance>, var categoricalAttributesValues: Map<Int, List<Double>>) {
+class Bilbo(
+        var nTree: Int,
+        var instances: List<Instance>,
+        var categoricalAttributesValues: Map<Int, List<Double>>,
+        var mAttributes: Int = instances.first().attributes.size
+) {
     val bootstrapSets: MutableList<Bootstrap> = mutableListOf()
     val decisionTrees: MutableList<DecisionTree> = mutableListOf()
 
     init {
         generateBootstraps()
-        println(bootstrapSets[2].bootstrapSet.size)
         generateDecisionTrees()
     }
 
     private fun generateDecisionTrees() {
-        val planter = Planter(instances, categoricalAttributesValues, mAttributes)
-        for (number_of_sets in 1..nTree) {
+        for (i in 0 until nTree) {
+            val planter = Planter(bootstrapSets[i].trainingSet, categoricalAttributesValues, mAttributes)
             decisionTrees.add(planter.plantTree())
         }
     }
@@ -21,17 +25,21 @@ class Bilbo(var nTree: Int, var mAttributes: Int, var instances: MutableList<Ins
         }
     }
 
-    public fun testTrees() {
-        val answers = mutableListOf<Int>()
-        (0..instances.size).forEach {
-            i -> decisionTrees.forEachIndexed {
-                index, decisionTree -> answers.add(decisionTree.decide(bootstrapSets[index].instances[i]))
+    public fun testTrees(testInstances: List<Instance>): List<Pair<Int, Int>>{
+        val votes = mutableListOf<Pair<Int, Int>>()
+        testInstances.forEach {
+            //save a list of expected and predicted classes
+            val answersForATree = mutableListOf<Int>()
+            decisionTrees.forEach { decisionTree ->
+                answersForATree.add(decisionTree.decide(it))
             }
-            println(answers.voteDecision())
+            votes.add(Pair(it.targetAttributeInt, answersForATree.voteDecision()))
         }
+        //println(votes)
+        return votes
     }
 
-    private fun MutableList<Int>.voteDecision() : Int {
+    private fun MutableList<Int>.voteDecision(): Int {
         val classes = mutableMapOf<Int, Int>()
         this.forEach { answer ->
             if (classes.containsKey(answer)) {
@@ -39,19 +47,15 @@ class Bilbo(var nTree: Int, var mAttributes: Int, var instances: MutableList<Ins
                 classes.replace(answer, update)
             } else classes.put(answer, 1)
         }
-        return classes.values.max()!!
+        return classes.entries.sortedBy { it.value }.last().key
     }
 }
 
 fun main(args: Array<String>) {
-    val dataReader = DataReader("./data/haberman.data")
-    val bilbo = Bilbo(10, 3, dataReader.trainingDataSet, dataReader.categoricalAttributesValues)
-    println(bilbo.bootstrapSets[0].bootstrapSet)
-    println(bilbo.bootstrapSets[1].bootstrapSet)
-    println(bilbo.bootstrapSets[2].bootstrapSet)
-    println(bilbo.bootstrapSets[2].bootstrapSet.size)
+    val dataReader = DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv")
+    val bilbo = Bilbo(10, dataReader.trainingDataSet, dataReader.categoricalAttributesValues)
+
     println(bilbo.decisionTrees)
-    println(bilbo.testTrees()
-    )
+    bilbo.testTrees(dataReader.testDataSet)
     println("ok")
 }

@@ -64,18 +64,23 @@ class DataReader(file: String) {
 
         columnDescriptor = buildColumnDescriptor().toMutableList()
 
+
         dataString.lines().forEachIndexed { index, line ->
             if (line != "" && index != 0) {
                 val instanceAux = line.split(",", ";").toMutableList()
 
                 //if the are ids, we discard it
-                instanceAux.indices.forEach { if (isIdPosition(it)) instanceAux.removeAt(it) }
+                val idColumns = mutableListOf<Int>()
+                instanceAux.indices.forEach { if (isIdPosition(it)) idColumns.add(it) }
+                idColumns.forEach { instanceAux.removeAt(it) }
 
                 protoDataSet.add(instanceAux)
             }
         }
         //after ids in instances are removed, we remove IS_ID entries in descriptor
-        columnDescriptor.indices.forEach { if (isIdPosition(it)) columnDescriptor.removeAt(it) }
+        val idColumns = mutableListOf<Int>()
+        columnDescriptor.indices.forEach { if (isIdPosition(it)) idColumns.add(it) }
+        idColumns.forEach { columnDescriptor.removeAt(it) }
         println("\n\nCOLUMN DESCRIPTOR:") ; println(columnDescriptor)
 
         val standardizer = FeaturesStandardizer(getTargetPosition(), columnDescriptor)

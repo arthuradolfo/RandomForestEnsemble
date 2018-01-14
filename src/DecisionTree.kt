@@ -23,9 +23,8 @@ data class TestNode(val testAttribute: Int, var branches: MutableList<DecisionTr
                 .forEach { matches.add(it) }
 
         when (matches.size) {
-            1 -> return branches[matches.first()]
             0 -> throw RuntimeException("No possible branches")
-            else -> throw RuntimeException("Multiple possible branches (${matches.size})")
+            else -> return branches[matches.first()]
         }
     }
 

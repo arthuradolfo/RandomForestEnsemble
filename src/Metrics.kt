@@ -1,10 +1,4 @@
-data class MetricsA(
-        val j: Double,
+data class Metrics(
         val accuracy: Double,
-        val precision: Double,
-        val recall: Double,
-        val standardDeviationJ: Double,
-        val standardDeviationAccuracy: Double,
-        val standardDeviationPrecision: Double,
-        val standardDeviationRecall: Double
+        val standardDeviationAccuracy: Double
 )

@@ -1,11 +1,17 @@
 import java.util.*
 import kotlin.math.log2
 
-class Planter(private val instances: List<Instance>, private val categoricalAttributesValues: Map<Int, List<Double>>, private val mAttributes: Int = instances.first().attributes.size) {
+class Planter(
+        private val instances: List<Instance>,
+        private val categoricalAttributesValues: Map<Int, List<Double>>,
+        private val mAttributes: Int = instances.first().attributes.size
+) {
 
     fun plantTree(): DecisionTree {
+        //println("\n%%%%% Building Tree ... %%%%%\n")
         val tree = recursivelyBuildTree(instances, instances.possibleAttributes().randomSubset(mAttributes).toMutableList())
         tree.commonAttributeRange = 0.0..0.0
+        //println("\n%%%%%%%% Built Tree %%%%%%%%%\n")
         return tree
     }
 
@@ -14,17 +20,16 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
 
         when {
             instances.allAreSameClass() -> {
-                println("All instances are of same class! $instances")
+                //println("All instances are of same class! $instances")
                 return DecisionLeaf(instances.first().targetAttributeInt)
             }
             possibleAttributes.isEmpty() -> {
-                println("No more possible attributes!")
+                //println("No more possible attributes!")
                 return DecisionLeaf(instances.majorityClass())
             }
         }
 
         val nodeSplit = nodeSplitID3(instances, possibleAttributes)
-        //println(nodeSplit)
         possibleAttributes.remove(nodeSplit.attribute)
 
         val decisionTree = TestNode(nodeSplit.attribute, mutableListOf())
@@ -43,6 +48,14 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
                 decisionTree.branches.add(branchIndex, recursiveBranch)
             }
         }
+        if (decisionTree.branches.isEmpty()) {
+            println("ERRO !")
+            println(nodeSplit)
+            println(instances)
+            println(possibleAttributes)
+            println(categoricalAttributesValues)
+            println("\n")
+        }
 
         return decisionTree
     }
@@ -52,12 +65,12 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
     private fun List<Instance>.majorityClass(): Int {
         val classes = mutableMapOf<Int, Int>()
         this.forEach { instance ->
-            if (classes.containsKey(instance.targetAttributeInt)) {
-                val update = instance.targetAttributeInt + 1
+            if (classes.containsKey(instance.targetAttributeInt) && classes[instance.targetAttributeInt] != null) {
+                val update = classes[instance.targetAttributeInt]!! + 1
                 classes.replace(instance.targetAttributeInt, update)
             } else classes.put(instance.targetAttributeInt, 1)
         }
-        return classes.values.max()!!
+        return classes.entries.sortedBy { it.value }.last().key
     }
 
     private fun List<Instance>.allAreSameClass(): Boolean
@@ -76,7 +89,7 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
     }
 
     private fun nodeSplitID3(instances: List<Instance>, possibleAttributes: List<Int>): NodeSplit {
-        var maxGain = 0.0
+        var maxGain = Double.NEGATIVE_INFINITY
         var maxGainNodeSplit = NodeSplit(0, emptyList())
 
         //println("\n\n ---- POSSIBLE ATTRIBUTES $possibleAttributes ----")
@@ -88,7 +101,7 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
                 val gain = infoGain(attribute, instances)
                 //println("Gain = $gain")
 
-                if (gain > maxGain) {
+                if (gain >= maxGain) {
                     //update comparison gain
                     maxGain = gain
                     //generate ranges from possible values of attribute
@@ -103,7 +116,7 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
 
                     val gain = infoGain(attribute, cutPoint, instances)
 
-                    if (gain > maxGain) {
+                    if (gain >= maxGain) {
                         //update comparison gain
                         maxGain = gain
                         //generate ranges from cut point
@@ -112,7 +125,7 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
                 }
             }
         }
-        println("Max gain is = $maxGain for $maxGainNodeSplit")
+        //println("Max gain is = $maxGain for $maxGainNodeSplit")
         return maxGainNodeSplit
     }
 
@@ -181,7 +194,7 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
         val orderedInstances: List<Instance> = instances.sortedBy { it.attributes[attribute] }
         orderedInstances.indices.forEach {
             //if there is a class change
-            if (orderedInstances[it].targetAttributeInt != orderedInstances[it + 1].targetAttributeInt)
+            if (it != orderedInstances.lastIndex && orderedInstances[it].targetAttributeInt != orderedInstances[it + 1].targetAttributeInt)
             //make a cut point between the attribute values
                 cutPoints.add((orderedInstances[it].attributes[attribute]
                         + orderedInstances[it + 1].attributes[attribute]) / 2)
@@ -192,7 +205,8 @@ class Planter(private val instances: List<Instance>, private val categoricalAttr
 }
 
 fun main(args: Array<String>) {
-    val reader = DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv")
+    val reader = DataReader("./data/haberman.data")
+    //val reader = DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv")
     //reader.dataSet.forEach { println(it) }
 
     val planter = Planter(reader.dataSet, reader.categoricalAttributesValues)
