@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="RandomForestEnsemble:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cb0a22cf-f1cd-4500-bd69-6f665f1de1a0" name="Default" comment="Fixed bugs and implemented cross validation and plot generation">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jmathio.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jmathplot.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/jmathio.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/libs/jmathplot.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/BilboConfig.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/EvaluateBilbo.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Plot.kt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Pc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/BilboBenchmark.kt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RandomForestEnsemble.iml" afterPath="$PROJECT_DIR$/RandomForestEnsemble.iml" />
-      <change beforePath="$PROJECT_DIR$/data/wpbc.data" afterPath="$PROJECT_DIR$/data/wpbc.data" />
-      <change beforePath="$PROJECT_DIR$/src/Bilbo.kt" afterPath="$PROJECT_DIR$/src/Bilbo.kt" />
-      <change beforePath="$PROJECT_DIR$/src/Bootstrap.kt" afterPath="$PROJECT_DIR$/src/Bootstrap.kt" />
-      <change beforePath="$PROJECT_DIR$/src/CrossValidation.kt" afterPath="$PROJECT_DIR$/src/CrossValidation.kt" />
-      <change beforePath="$PROJECT_DIR$/src/DataReader.kt" afterPath="$PROJECT_DIR$/src/DataReader.kt" />
-      <change beforePath="$PROJECT_DIR$/src/DecisionTree.kt" afterPath="$PROJECT_DIR$/src/DecisionTree.kt" />
-      <change beforePath="$PROJECT_DIR$/src/Metrics.kt" afterPath="$PROJECT_DIR$/src/Metrics.kt" />
-      <change beforePath="$PROJECT_DIR$/src/Planter.kt" afterPath="$PROJECT_DIR$/src/Planter.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,91 +30,8 @@
       <file leaf-file-name="CrossValidation.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CrossValidation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvaluateBilbo.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/EvaluateBilbo.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BilboConfig.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BilboConfig.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DecisionTree.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DecisionTree.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bootstrap.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bootstrap.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataReader.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataReader.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="81" column="74" lean-forward="false" selection-start-line="81" selection-start-column="74" selection-end-line="81" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="n#!!block;n#Companion#0;n#!!block;n#DataReader#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wdbc.names" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/description/wdbc.names">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2721">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Plot.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Plot.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wpbc.data" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/wpbc.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="339" lean-forward="false" selection-start-line="0" selection-start-column="339" selection-end-line="0" selection-end-column="339" />
+            <state relative-caret-position="-1293">
+              <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -132,9 +40,94 @@
       <file leaf-file-name="Bilbo.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bilbo.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="49" />
+            <state relative-caret-position="201">
+              <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Planter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="127" column="10" lean-forward="false" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
+              <folding>
+                <element signature="n#!!block;n#majorityClass#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="e#2738#3081#2" expanded="false" />
+                <element signature="e#2866#3022#1" expanded="false" />
+                <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="e#3622#3700#1" expanded="false" />
+                <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
+                <element signature="n#!!block;n#main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BilboConfig.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BilboConfig.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BilboBenchmark.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BilboBenchmark.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="best_configs.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/best_configs.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluateBilbo.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EvaluateBilbo.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demonstration.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Demonstration.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataReader.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataReader.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="90" column="63" lean-forward="false" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <element signature="n#!!block;n#Companion#0;n#!!block;n#DataReader#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +137,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -159,6 +153,9 @@
       <find>MetricsA</find>
       <find>N</find>
       <find>760</find>
+      <find>Max</find>
+      <find>max ga</find>
+      <find>println</find>
     </findStrings>
     <replaceStrings>
       <replace>Metrics</replace>
@@ -186,14 +183,17 @@
         <option value="$PROJECT_DIR$/src/Bootstrap.kt" />
         <option value="$PROJECT_DIR$/src/FeaturesStandardizer.kt" />
         <option value="$PROJECT_DIR$/data/wpbc.data" />
-        <option value="$PROJECT_DIR$/src/DataReader.kt" />
         <option value="$PROJECT_DIR$/data/wine.data" />
         <option value="$PROJECT_DIR$/src/DecisionTree.kt" />
-        <option value="$PROJECT_DIR$/src/Planter.kt" />
         <option value="$PROJECT_DIR$/src/Plot.kt" />
         <option value="$PROJECT_DIR$/src/Bilbo.kt" />
         <option value="$PROJECT_DIR$/src/CrossValidation.kt" />
         <option value="$PROJECT_DIR$/src/EvaluateBilbo.kt" />
+        <option value="$PROJECT_DIR$/src/BilboBenchmarlk.kt" />
+        <option value="$PROJECT_DIR$/data/best_configs.txt" />
+        <option value="$PROJECT_DIR$/src/BilboBenchmark.kt" />
+        <option value="$PROJECT_DIR$/src/Planter.kt" />
+        <option value="$PROJECT_DIR$/src/DataReader.kt" />
       </list>
     </option>
   </component>
@@ -223,6 +223,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
@@ -236,40 +237,43 @@
             <path>
               <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
               <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="description" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
               <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
               <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="RandomForestEnsemble_jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlexNet" />
     <property name="SearchEverywhereHistoryKey" value="dado&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/dadosBenchmark_validacaoAlgoritmoAD.csv&#10;dados&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/dadosBenchmark_validacaoAlgoritmoAD.csv&#10;haberm&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/haberman.data&#10;haber&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/haberman.data" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
@@ -294,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.EvaluateBilboKt">
+  <component name="RunManager" selected="Kotlin.BilboBenchmarkKt">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -336,63 +340,63 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="BilboKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="BilboBenchmarkKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="BilboKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="BilboBenchmarkKt" />
+      <option name="WORKING_DIRECTORY" />
       <module name="RandomForestEnsemble" />
       <envs />
     </configuration>
-    <configuration name="BootstrapKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="BilboKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="BootstrapKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="BilboKt" />
+      <option name="WORKING_DIRECTORY" />
       <module name="RandomForestEnsemble" />
       <envs />
     </configuration>
     <configuration name="CrossValidationKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="CrossValidationKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="CrossValidationKt" />
+      <option name="WORKING_DIRECTORY" />
       <module name="RandomForestEnsemble" />
       <envs />
     </configuration>
     <configuration name="EvaluateBilboKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="EvaluateBilboKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="EvaluateBilboKt" />
+      <option name="WORKING_DIRECTORY" />
       <module name="RandomForestEnsemble" />
       <envs />
     </configuration>
     <configuration name="PlanterKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="PlanterKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="PlanterKt" />
+      <option name="WORKING_DIRECTORY" />
       <module name="RandomForestEnsemble" />
       <envs />
     </configuration>
@@ -437,19 +441,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Kotlin.BootstrapKt" />
-      <item index="1" class="java.lang.String" itemvalue="Kotlin.BilboKt" />
-      <item index="2" class="java.lang.String" itemvalue="Kotlin.PlanterKt" />
-      <item index="3" class="java.lang.String" itemvalue="Kotlin.CrossValidationKt" />
-      <item index="4" class="java.lang.String" itemvalue="Kotlin.EvaluateBilboKt" />
+      <item index="0" class="java.lang.String" itemvalue="Kotlin.BilboKt" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.PlanterKt" />
+      <item index="2" class="java.lang.String" itemvalue="Kotlin.CrossValidationKt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.EvaluateBilboKt" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.BilboBenchmarkKt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.EvaluateBilboKt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.CrossValidationKt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.BilboKt" />
-        <item index="3" class="java.lang.String" itemvalue="Kotlin.PlanterKt" />
-        <item index="4" class="java.lang.String" itemvalue="Kotlin.BootstrapKt" />
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.BilboBenchmarkKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.EvaluateBilboKt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.CrossValidationKt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.BilboKt" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.PlanterKt" />
       </list>
     </recent_temporary>
   </component>
@@ -473,6 +477,7 @@
       <workItem from="1515813683914" duration="3162000" />
       <workItem from="1515848449515" duration="14817000" />
       <workItem from="1515869837534" duration="13324000" />
+      <workItem from="1527863604838" duration="3387000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] Adicionado arquivos de dados">
       <created>1515636325397</created>
@@ -516,37 +521,52 @@
       <option name="project" value="LOCAL" />
       <updated>1515861641270</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixing best_configs">
+      <created>1527865541773</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527865541773</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commenting prints">
+      <created>1527866984331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527866984331</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38565000" />
+    <option name="totallyTimeSpent" value="41952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274244" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32731378" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31489843" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31491137" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2521322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Flutter Inspector" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -568,7 +588,9 @@
     <MESSAGE value="Fixing Planter and Decision tree and adding printed logging" />
     <MESSAGE value="Printing decisions" />
     <MESSAGE value="camelCasing" />
-    <option name="LAST_COMMIT_MESSAGE" value="camelCasing" />
+    <MESSAGE value="Fixing best_configs" />
+    <MESSAGE value="Commenting prints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commenting prints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -577,38 +599,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CrossValidation.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Folding.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DecisionTree.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bootstrap.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bilbo.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -654,17 +644,11 @@
             <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
             <element signature="e#3622#3700#1" expanded="false" />
             <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#6115#6674#2" expanded="false" />
-            <element signature="e#6209#6664#1" expanded="false" />
             <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#7259#7450#2" expanded="false" />
             <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#7808#8021#2" expanded="false" />
             <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
             <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#8637#9042#2" expanded="false" />
             <element signature="n#!!block;n#main#0" expanded="false" />
-            <element signature="e#9455#9519#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,17 +696,11 @@
             <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
             <element signature="e#3622#3700#1" expanded="false" />
             <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#6115#6674#2" expanded="false" />
-            <element signature="e#6209#6664#1" expanded="false" />
             <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#7259#7450#2" expanded="false" />
             <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#7808#8021#2" expanded="false" />
             <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
             <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#8637#9042#2" expanded="false" />
             <element signature="n#!!block;n#main#0" expanded="false" />
-            <element signature="e#9455#9519#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -908,19 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Metrics.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/description/wpbc.names">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="145" column="18" lean-forward="false" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,52 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Planter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="91" column="46" lean-forward="false" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!block;n#majorityClass#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#2738#3081#2" expanded="false" />
-            <element signature="e#2866#3022#1" expanded="false" />
-            <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#3622#3700#1" expanded="false" />
-            <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#6115#6674#2" expanded="false" />
-            <element signature="e#6209#6664#1" expanded="false" />
-            <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#7259#7450#2" expanded="false" />
-            <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#7808#8021#2" expanded="false" />
-            <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#8637#9042#2" expanded="false" />
-            <element signature="n#!!block;n#main#0" expanded="false" />
-            <element signature="e#9455#9519#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wpbc.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="339" lean-forward="false" selection-start-line="0" selection-start-column="339" selection-end-line="0" selection-end-column="339" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataReader.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="81" column="74" lean-forward="false" selection-start-line="81" selection-start-column="74" selection-end-line="81" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="n#!!block;n#Companion#0;n#!!block;n#DataReader#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,32 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/description/wdbc.names">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2721">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bilbo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BilboConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CrossValidation.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1041,10 +940,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/wpbc.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="339" lean-forward="false" selection-start-line="0" selection-start-column="339" selection-end-line="0" selection-end-column="339" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Demonstration.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/EvaluateBilbo.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="56">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Metrics.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BilboBenchmark.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/best_configs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BilboConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CrossValidation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1293">
+          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bilbo.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="42" column="31" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Planter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="127" column="10" lean-forward="false" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!block;n#majorityClass#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="e#2738#3081#2" expanded="false" />
+            <element signature="e#2866#3022#1" expanded="false" />
+            <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="e#3622#3700#1" expanded="false" />
+            <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataReader.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="90" column="63" lean-forward="false" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="n#!!block;n#Companion#0;n#!!block;n#DataReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BilboBenchmark.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1055,10 +1057,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>RandomForestEnsemble:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
