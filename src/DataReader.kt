@@ -81,14 +81,14 @@ class DataReader(file: String) {
         val idColumns = mutableListOf<Int>()
         columnDescriptor.indices.forEach { if (isIdPosition(it)) idColumns.add(it) }
         idColumns.forEach { columnDescriptor.removeAt(it) }
-        println("\n\nCOLUMN DESCRIPTOR:") ; println(columnDescriptor)
+        //println("\n\nCOLUMN DESCRIPTOR:") ; println(columnDescriptor)
 
         val standardizer = FeaturesStandardizer(getTargetPosition(), columnDescriptor)
         dataSet.addAll(standardizer.standardizeFeatures(protoDataSet))
         categoricalAttributesValues = standardizer.categoricalAttributesValues
         categoricalAttributesMeanings = standardizer.categoricalAttributesMeanings
-        println("CATEGORICAL ATTRIBUTES VALUES:") ; println(categoricalAttributesValues)
-        println("CATEGORICAL ATTRIBUTES MEANINGS:") ; println(categoricalAttributesMeanings)
+        //println("CATEGORICAL ATTRIBUTES VALUES:") ; println(categoricalAttributesValues)
+        //println("CATEGORICAL ATTRIBUTES MEANINGS:") ; println(categoricalAttributesMeanings)
 
         Collections.shuffle(dataSet)
         splitSetsToTrainAndTest()
