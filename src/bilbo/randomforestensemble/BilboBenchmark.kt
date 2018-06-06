@@ -25,6 +25,7 @@ class BilboBenchmark {
                 }
             }
 
+
             //run selected configuration
             val dataReader = DataReader(fileName)
             val bilbo = Bilbo(
@@ -35,6 +36,8 @@ class BilboBenchmark {
 
             )
             val results = bilbo.testTrees(dataReader.testDataSet)
+
+            println(fileName)
             println(results)
         }
     }
