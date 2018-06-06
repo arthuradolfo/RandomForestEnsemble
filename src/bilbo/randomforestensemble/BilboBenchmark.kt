@@ -25,7 +25,6 @@ class BilboBenchmark {
                 }
             }
 
-
             //run selected configuration
             val dataReader = DataReader(fileName)
             val bilbo = Bilbo(

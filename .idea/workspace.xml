@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb0a22cf-f1cd-4500-bd69-6f665f1de1a0" name="Default" comment="workspace changes when packaging">
+    <list default="true" id="cb0a22cf-f1cd-4500-bd69-6f665f1de1a0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt" afterPath="$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt" />
     </list>
@@ -79,8 +79,8 @@
       <file leaf-file-name="BilboBenchmark.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="330">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -498,7 +498,7 @@
       <workItem from="1528158796053" duration="2356000" />
       <workItem from="1528161457392" duration="1903000" />
       <workItem from="1528304871730" duration="226000" />
-      <workItem from="1528305398606" duration="1931000" />
+      <workItem from="1528305398606" duration="1947000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] Adicionado arquivos de dados">
       <created>1515636325397</created>
@@ -584,11 +584,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528167282116</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="misc">
+      <created>1528307343492</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1528307343492</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51378000" />
+    <option name="totallyTimeSpent" value="51394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -701,7 +708,8 @@
     <MESSAGE value="Packaged srcs and turned data folder into resources directory" />
     <MESSAGE value="Addiing missing sources" />
     <MESSAGE value="workspace changes when packaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace changes when packaging" />
+    <MESSAGE value="misc" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1153,8 +1161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
