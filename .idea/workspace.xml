@@ -26,31 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrossValidation.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Bilbo.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Bilbo.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="155">
               <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fold.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Fold.kt">
+      <file leaf-file-name="CrossValidation.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="715">
+              <caret line="94" column="5" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -59,7 +49,7 @@
       <file leaf-file-name="Folding.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Folding.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="1204">
               <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
               <folding />
             </state>
@@ -79,8 +69,60 @@
       <file leaf-file-name="BilboBenchmark.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="400">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecisionTree.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/DecisionTree.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planter.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Planter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="19" />
+              <folding>
+                <element signature="e#36#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wine.names" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/description/wine.names">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="87" column="34" lean-forward="false" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wdbc.names" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/description/wdbc.names">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wdbc.data" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/wdbc.data">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,6 +151,9 @@
       <find>760</find>
       <find>Max</find>
       <find>max ga</find>
+      <find>print</find>
+      <find>test</find>
+      <find>node</find>
       <find>println</find>
     </findStrings>
     <replaceStrings>
@@ -154,9 +199,9 @@
         <option value="$PROJECT_DIR$/src/Planter.kt" />
         <option value="$PROJECT_DIR$/src/DataReader.kt" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt" />
         <option value="$PROJECT_DIR$/src/bilbo/randomforestensemble/DataReader.kt" />
         <option value="$PROJECT_DIR$/src/bilbo/randomforestensemble/MapOfTargetAttributes.kt" />
+        <option value="$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt" />
         <option value="$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt" />
       </list>
     </option>
@@ -170,7 +215,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
-    <option name="height" value="547" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -187,9 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,6 +245,12 @@
               <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
               <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandomForestEnsemble" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="description" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RandomForestEnsemble" type="b2602c69:ProjectViewProjectNode" />
@@ -250,6 +300,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -271,7 +322,7 @@
     <property name="project.structure.proportion" value="0.09520725" />
     <property name="project.structure.side.proportion" value="0.13013698" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/RandomForestEnsemble_jar/RandomForestEnsemble.jar" />
-    <property name="SearchEverywhereHistoryKey" value="bench&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/bilbo/randomforestensemble/BilboBenchmark.kt&#10;bilb&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/bilbo/randomforestensemble/Bilbo.kt&#10;MANI&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/META-INF/MANIFEST.MF&#10;dado&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/dadosBenchmark_validacaoAlgoritmoAD.csv&#10;dados&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/dadosBenchmark_validacaoAlgoritmoAD.csv&#10;haberm&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/haberman.data&#10;haber&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/haberman.data" />
+    <property name="SearchEverywhereHistoryKey" value="pla&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/bilbo/randomforestensemble/Planter.kt&#10;test&#9;null&#9;null&#10;bench&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/bilbo/randomforestensemble/BilboBenchmark.kt&#10;bilb&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/bilbo/randomforestensemble/Bilbo.kt&#10;MANI&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/src/META-INF/MANIFEST.MF&#10;dado&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/dadosBenchmark_validacaoAlgoritmoAD.csv&#10;dados&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/dadosBenchmark_validacaoAlgoritmoAD.csv&#10;haberm&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/haberman.data&#10;haber&#9;FILE&#9;file://F:/Documentos/IdeaProjects/RandomForestEnsemble/data/haberman.data" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -498,7 +549,8 @@
       <workItem from="1528158796053" duration="2356000" />
       <workItem from="1528161457392" duration="1903000" />
       <workItem from="1528304871730" duration="226000" />
-      <workItem from="1528305398606" duration="1947000" />
+      <workItem from="1528305398606" duration="2693000" />
+      <workItem from="1528337892296" duration="2964000" />
     </task>
     <task id="LOCAL-00001" summary="[ADD] Adicionado arquivos de dados">
       <created>1515636325397</created>
@@ -591,30 +643,38 @@
       <option name="project" value="LOCAL" />
       <updated>1528307343492</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="misc">
+      <created>1528307352948</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1528307352948</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51394000" />
+    <option name="totallyTimeSpent" value="55104000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32731378" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31489843" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3144385" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27360514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27736053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -627,7 +687,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32731378" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -718,35 +777,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Planter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding>
-            <element signature="e#36#78#0" expanded="false" />
-            <element signature="n#!!block;n#majorityClass#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#2774#3117#2" expanded="false" />
-            <element signature="e#2902#3058#1" expanded="false" />
-            <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#3658#3736#1" expanded="false" />
-            <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Fold.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="true" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -776,18 +806,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="47" />
           <folding>
-            <element signature="e#36#78#0" expanded="false" />
-            <element signature="n#!!block;n#majorityClass#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#2774#3117#2" expanded="false" />
-            <element signature="e#2902#3058#1" expanded="false" />
-            <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#3658#3736#1" expanded="false" />
-            <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#main#0" expanded="false" />
+            <element signature="e#36#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,19 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/DecisionTree.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Bootstrap.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,32 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Planter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#36#78#0" expanded="false" />
-            <element signature="n#!!block;n#majorityClass#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#2774#3117#2" expanded="false" />
-            <element signature="e#2902#3058#1" expanded="false" />
-            <element signature="n#!!block;n#randomSubset#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="e#3658#3736#1" expanded="false" />
-            <element signature="n#!!block;n#info#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#infoContinuousAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#infoCategoricalAttribute#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!doc;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#possibleCutPoints#0;n#!!block;n#Planter#0" expanded="false" />
-            <element signature="n#!!block;n#main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RandomForestEnsemble.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,9 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#36#84#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,15 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/description/wdbc.names">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2856">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,7 +1099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Folding.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="1204">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
           <folding />
         </state>
@@ -1143,26 +1113,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Bilbo.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
+        <state relative-caret-position="155">
           <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/description/wine.names">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="87" column="34" lean-forward="false" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/wdbc.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/description/wdbc.names">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/CrossValidation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="94" column="5" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/DecisionTree.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/Planter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="e#36#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bilbo/randomforestensemble/BilboBenchmark.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="400">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
