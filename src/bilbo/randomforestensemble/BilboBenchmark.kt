@@ -8,19 +8,19 @@ class BilboBenchmark(private val k: Int) {
         for (i in 1..4) {
             when (i) { //choose file and configuration
                 1 -> {
-                    fileName = "wine.data"
+                    fileName = "wine/wine.data"
                     config = BilboConfig(m = 13, nTree = 40)
                 }
                 2 -> {
-                    fileName = "haberman.data"
+                    fileName = "haberman/haberman.data"
                     config = BilboConfig(m = 3, nTree = 28)
                 }
                 3 -> {
-                    fileName = "cmc.data"
+                    fileName = "cmc/cmc.data"
                     config = BilboConfig(m = 8, nTree = 21)
                 }
                 4 -> {
-                    fileName = "wdbc.data"
+                    fileName = "wdbc/wdbc.data"
                     config = BilboConfig(m = 29, nTree = 15)
                 }
             }
