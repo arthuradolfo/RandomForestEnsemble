@@ -67,21 +67,22 @@ class BilboBenchmark(private val k: Int) {
 
     private fun calculateMeanMetrics(metricsList: List<Metrics>): Metrics {
         var meanAccuracy = 0.0
-        var standardDeviationAccuracy = 0.0
+        //var standardDeviationAccuracy = 0.0
 
         metricsList.forEach {
-            meanAccuracy += it.accuracy / metricsList.size
+            meanAccuracy += it.accuracy
         }
+        meanAccuracy /= metricsList.size
 
-        metricsList.forEach {
+        /*metricsList.forEach {
             standardDeviationAccuracy += Math.pow((it.accuracy - meanAccuracy), 2.0) / (metricsList.size - 1)
         }
 
-        standardDeviationAccuracy = Math.sqrt(standardDeviationAccuracy)
+        standardDeviationAccuracy = Math.sqrt(standardDeviationAccuracy)*/
 
         return Metrics(
                 meanAccuracy,
-                standardDeviationAccuracy
+                0.0
         )
     }
 }
