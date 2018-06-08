@@ -1,26 +1,34 @@
 package bilbo.randomforestensemble
 
-class BilboBenchmark(private val k: Int) {
+class BilboBenchmark(private val k: Int, private val datasetPercentage: DatasetPercentage) {
     fun run() {
         var fileName = String()
         var config = BilboConfig(0, 0)
 
         for (i in 1..4) {
-            when (i) { //choose file and configuration
+            //choose file suffix based on data set percentage
+            val fileSuffix = when (datasetPercentage) {
+                DatasetPercentage.PCT100 -> ".data"
+                DatasetPercentage.PCT75 -> "_75pct.data"
+                DatasetPercentage.PCT50 -> "_50pct.data"
+                DatasetPercentage.PCT25 -> "_25pct.data"
+            }
+
+            when (i) { //choose dataset and forest configuration
                 1 -> {
-                    fileName = "wine/wine.data"
+                    fileName = "wine/wine$fileSuffix"
                     config = BilboConfig(m = 13, nTree = 40)
                 }
                 2 -> {
-                    fileName = "haberman/haberman.data"
+                    fileName = "haberman/haberman$fileSuffix"
                     config = BilboConfig(m = 3, nTree = 28)
                 }
                 3 -> {
-                    fileName = "cmc/cmc.data"
+                    fileName = "cmc/cmc$fileSuffix"
                     config = BilboConfig(m = 8, nTree = 21)
                 }
                 4 -> {
-                    fileName = "wdbc/wdbc.data"
+                    fileName = "wdbc/wdbc$fileSuffix"
                     config = BilboConfig(m = 29, nTree = 15)
                 }
             }
@@ -87,7 +95,11 @@ class BilboBenchmark(private val k: Int) {
     }
 }
 
+enum class DatasetPercentage {
+    PCT100, PCT75, PCT50, PCT25
+}
+
 fun main(args: Array<String>) {
-    val benchmark = BilboBenchmark(10)
+    val benchmark = BilboBenchmark(k = 10, datasetPercentage = DatasetPercentage.PCT75)
     benchmark.run()
 }
