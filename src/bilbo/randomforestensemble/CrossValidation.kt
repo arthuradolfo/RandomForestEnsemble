@@ -115,7 +115,7 @@ class CrossValidation(dataFile: String, val k: Int) {
 }
 
 fun main(args: Array<String>) {
-    val cv = CrossValidation("./data/wdbc.data", 10)
+    val cv = CrossValidation("./data/wdbc_100pct.data", 10)
     cv.doCrossValidation_FindBestConfigs()
     println("ok")
 }

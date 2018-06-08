@@ -1,7 +1,7 @@
 package bilbo.randomforestensemble
 
 fun main(args: Array<String>) {
-    val cv = CrossValidation("./data/wine.data", 10)
+    val cv = CrossValidation("./data/wine_100pct.data", 10)
     val accuracies = cv.doCrossValidation_GetAllAccuracies()
     val bigListOfAccuracies = mutableListOf<Double>()
     val bigNTreeSequence = mutableListOf<Double>()

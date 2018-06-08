@@ -144,6 +144,6 @@ class DataReader(file: String) {
 }
 
 fun main(args: Array<String>) {
-    val dataReader: DataReader = DataReader("./data/haberman.data")
+    val dataReader: DataReader = DataReader("./data/haberman_100pct.data")
     println(dataReader)
 }

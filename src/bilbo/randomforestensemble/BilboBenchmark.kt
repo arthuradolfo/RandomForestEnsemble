@@ -8,7 +8,7 @@ class BilboBenchmark(private val k: Int, private val datasetPercentage: DatasetP
         for (i in 1..4) {
             //choose file suffix based on data set percentage
             val fileSuffix = when (datasetPercentage) {
-                DatasetPercentage.PCT100 -> ".data"
+                DatasetPercentage.PCT100 -> "_100pct.data"
                 DatasetPercentage.PCT75 -> "_75pct.data"
                 DatasetPercentage.PCT50 -> "_50pct.data"
                 DatasetPercentage.PCT25 -> "_25pct.data"
@@ -100,6 +100,6 @@ enum class DatasetPercentage {
 }
 
 fun main(args: Array<String>) {
-    val benchmark = BilboBenchmark(k = 10, datasetPercentage = DatasetPercentage.PCT75)
+    val benchmark = BilboBenchmark(k = 10, datasetPercentage = DatasetPercentage.PCT100)
     benchmark.run()
 }

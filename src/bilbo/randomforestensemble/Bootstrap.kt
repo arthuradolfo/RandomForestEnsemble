@@ -22,7 +22,7 @@ class Bootstrap(var instances: List<Instance>) {
 }
 
 fun main(args: Array<String>) {
-    val dataReader = DataReader("./data/haberman.data")
+    val dataReader = DataReader("./data/haberman_100pct.data")
     val bs = Bootstrap(dataReader.trainingDataSet)
     println(bs.trainingSet)
     println("ok")

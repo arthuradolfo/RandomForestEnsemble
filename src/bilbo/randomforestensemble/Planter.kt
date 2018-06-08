@@ -207,7 +207,7 @@ class Planter(
 }
 
 fun main(args: Array<String>) {
-    val reader = DataReader("./data/haberman.data")
+    val reader = DataReader("./data/haberman_100pct.data")
     //val reader = bilbo.randomforestensemble.DataReader("./data/dadosBenchmark_validacaoAlgoritmoAD.csv")
     //reader.dataSet.forEach { println(it) }
 
